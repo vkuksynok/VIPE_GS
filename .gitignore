@@ -1,0 +1,31 @@
+# Local task inputs
+dataset/
+
+# Local and RunPod scratch data
+tmp/
+data/
+artifacts/
+cache/
+envs/
+logs/
+outputs/
+renders/
+exports/
+third_party/
+
+# Machine-specific configuration
+config/paths.env
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

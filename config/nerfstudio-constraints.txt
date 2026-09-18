@@ -1,0 +1,5 @@
+# Torch 2.9 extensions are built against NumPy 2.x; this is what the install resolved.
+numpy==2.5.3
+
+# Pinned by Nerfstudio 1.1.5, repeated here for an auditable top-level lock.
+gsplat==1.4.0
