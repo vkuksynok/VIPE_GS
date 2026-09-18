@@ -21,6 +21,21 @@ those checks found a camera pose that ViPE reported wrong without any warning; s
 - **Environment that was verified:** [docs/ENVIRONMENT.md](docs/ENVIRONMENT.md)
 - **Defects hit while building this, and how each was diagnosed:** [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
 
+## Downloads
+
+The model and the demo video are too large for Git and live in Google Drive. Each folder carries a
+README listing SHA-256 checksums for its files.
+
+- **[Gaussian Splatting result](https://drive.google.com/drive/folders/191VxEsnhEIp-kD1jtSeveLZysy2abGBQ?usp=sharing)**
+  — `splat.ply` with 7,055,547 gaussians, the Splatfacto checkpoint and its `config.yml`, the camera
+  path and the trajectory rendered from the model, plus held-out evaluation frames and metrics
+- **[Demo video](https://drive.google.com/drive/folders/1Y5jK8dbYpLeNNGC0NuojUwUlT3Swie7a?usp=sharing)**
+  — 73 s end-to-end walkthrough: the captured stills, each stage's measured result, a held-out frame
+  against its render, and the full fly-through
+
+The PLY opens in any 3D Gaussian Splatting viewer. Note that the checkpoint plus its `config.yml`,
+not the PLY, are the reproducible state of the model.
+
 ## Requirements
 
 - Linux host with an NVIDIA GPU of at least 24 GB; the reference run peaked at 24,806 MiB
